@@ -1,14 +1,14 @@
-# vue-text-dot
+# vue-typewriter
 A vue component that imitate typing text.
 
 ## Installation
 ``` bash
-npm install vue-typewriter --save
+npm install vue-type-writer --save
 ```
 and in your component:
 
 ``` javascript
-import typewriter from 'vue-typewriter'
+import typewriter from 'vue-type-writer'
 ```
 
 ## Usage
