@@ -11,7 +11,7 @@ export default {
     interval: { type: Number, default: 75 }
   },
   created () {
-    this.$on('typewrite', () => {
+    this.$on('typewrite', function () {
       this.typewriter()
     })
   },
@@ -19,21 +19,21 @@ export default {
     typewriter () {
       var $ele = this.$el
       var str = $ele.innerHTML
-      var progress = 0;
-      $ele.innerHTML = '';
-      let interval = this.interval;
+      var progress = 0
+      $ele.innerHTML = ''
+      let interval = this.interval
       var timer = setInterval(function() {
-        var current = str.substr(progress, 1);
+        var current = str.substr(progress, 1)
         if (current === '<') {
-          progress = str.indexOf('>', progress) + 1;
+          progress = str.indexOf('>', progress) + 1
         } else {
-          progress++;
+          progress++
         }
-        $ele.innerHTML =str.substring(0, progress) + (progress < str.length && (progress & 1) ? '_' : '');
+        $ele.innerHTML =str.substring(0, progress) + (progress < str.length && (progress & 1) ? '_' : '')
         if (progress >= str.length) {
-          clearInterval(timer);
+          clearInterval(timer)
         }
-      }, interval);
+      }, interval)
     }
   }
 }
