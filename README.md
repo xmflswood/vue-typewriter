@@ -1,4 +1,4 @@
-# vue-typewriter
+# vue-type-writer
 A vue component that imitate typing text.
 
 ## Installation
