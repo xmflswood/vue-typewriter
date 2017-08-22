@@ -1,5 +1,5 @@
 # vue-type-writer
-A vue component that imitate typing text.
+A vue component that imitate typing text..
 
 ## Installation
 ``` bash
